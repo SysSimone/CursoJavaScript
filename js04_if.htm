@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>js04_if.htm - if</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta charset="utf-8"/>
+</head>
+
+<body>
+
+<script language="JavaScript">
+<!--
+
+/* Objetivo: Ler dois valores, independentemente da ordem em que foram digitados, e apresentálos em
+ordem crescente. Será necessário efetuar a troca de valores, por isso, recomendamos definir uma 
+terceira variável.*/
+
+
+/* Definição das variáveis */
+
+var js_n1;
+var js_n2;
+var js_n3;
+
+/* Entrada de dados */
+
+js_n1= perseInt(window.prompt('Informe o valor do primeiro numero: ' , '00'));
+js_n2= perseInt(window.prompt('Informe o valor do segundo numero: ' , '00'));
+
+/* Saída de Dados sem classificacao */
+
+document.write('numero 1 digitado =' + js_n1);
+document.write('<br>numero 2 digitado =' + js_n2);
+
+/* Saída de dados com classificação por decisão condicional simples (if) */
+
+   if(js_n1 > js_n2) {
+   js_n3 = js_n1;
+   js_n1 = js_n2;
+   js_n2 = js_n3;
+
+  }
+document.write('<p><b>Classificação em ordem crescente:</b> ' +js_n1 + ' e ' +js_n2);
+
+
+//-->
+</script>
+</body>
+</html>
